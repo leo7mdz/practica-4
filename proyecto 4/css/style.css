@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    max-height: 100%;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.article{ 
+    
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+border-radius: 10px;
+      box-shadow: 0 8px 18px 6px grey;
+}
+
+.join{
+    padding-left: 20px;
+     padding-right: 20px;
+}
+.join__tittle{
+    color:hsl(179, 62%, 43%)
+}
+
+.join__subtittle{
+    color:hsl(71, 73%, 54%) ;
+   
+}
+
+.join__paragraph{
+    color: hsl(218, 22%, 67%);
+   
+    
+}
+.suscribe{
+    background-color:hsl(179, 62%, 43%) ;
+     color:whitesmoke;
+     padding-left: 20px;
+     padding-right: 20px;
+     
+     
+}
+/* .suscribe__tittle{
+    ;
+   
+} */
+
+.suscribe__fee{
+    margin-bottom: 5px;
+     font-size: 2.3rem;
+      margin-top:0;
+}
+
+.suscribe__month{
+    color:hsl(204, 43%, 93%) ;
+    font-size: 1rem;
+}
+
+
+.suscribe__link{
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: hsl(71, 73%, 54%);
+    color: whitesmoke;  
+}
+
+.footer{
+    background-color:hsl(179, 62%, 43%) ;
+    padding-left: 20px;
+     padding-right: 20px;
+    color: whitesmoke;
+    opacity: .8;
+}
+
+.footer__tittle{
+    margin-top: 0;
+    padding-top: 20px;
+    
+}
+@media screen and (min-width:720px){
+   .article{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr) ;
+      /*  grid-template-rows: 2,1fr; */
+       max-width: 800px;
+       margin: 50px auto;
+      border-radius: 10px;
+      box-shadow: 0 8px 14px 6px grey;
+   }
+
+   .join{
+       grid-column: span 2;
+       grid-row: 1/2;
+   }
+
+   .suscribe{
+       grid-row: 2/3;
+       grid-column: 1/2;
+       border-bottom-left-radius: 10px;
+       
+   }
+   .suscribe__link{
+       margin-top: 30px;
+       margin-bottom: 40px;
+   }
+
+   .footer{
+       border-bottom-right-radius: 10px;
+       padding-left: 50px;
+       }
+
+   .footer__categories{
+       margin-top: 0;
+       margin-bottom: 4px;
+   }
+}
+
+
+
+
+
+
+
